@@ -26,9 +26,14 @@ Partial Class Form_Main
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BulletLibraryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BrassLibraryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PowderLibraryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrimerLibraryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LoadLibraryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,6 +59,49 @@ Partial Class Form_Main
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
+        'ViewToolStripMenuItem
+        '
+        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BulletLibraryToolStripMenuItem, Me.BrassLibraryToolStripMenuItem, Me.PowderLibraryToolStripMenuItem, Me.PrimerLibraryToolStripMenuItem, Me.LoadLibraryToolStripMenuItem, Me.LogsToolStripMenuItem})
+        Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.ViewToolStripMenuItem.Text = "View"
+        '
+        'BulletLibraryToolStripMenuItem
+        '
+        Me.BulletLibraryToolStripMenuItem.Name = "BulletLibraryToolStripMenuItem"
+        Me.BulletLibraryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BulletLibraryToolStripMenuItem.Text = "Bullet Library"
+        '
+        'BrassLibraryToolStripMenuItem
+        '
+        Me.BrassLibraryToolStripMenuItem.Name = "BrassLibraryToolStripMenuItem"
+        Me.BrassLibraryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BrassLibraryToolStripMenuItem.Text = "Brass Library"
+        '
+        'PowderLibraryToolStripMenuItem
+        '
+        Me.PowderLibraryToolStripMenuItem.Name = "PowderLibraryToolStripMenuItem"
+        Me.PowderLibraryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PowderLibraryToolStripMenuItem.Text = "Powder Library"
+        '
+        'PrimerLibraryToolStripMenuItem
+        '
+        Me.PrimerLibraryToolStripMenuItem.Name = "PrimerLibraryToolStripMenuItem"
+        Me.PrimerLibraryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PrimerLibraryToolStripMenuItem.Text = "Primer Library"
+        '
+        'LoadLibraryToolStripMenuItem
+        '
+        Me.LoadLibraryToolStripMenuItem.Name = "LoadLibraryToolStripMenuItem"
+        Me.LoadLibraryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LoadLibraryToolStripMenuItem.Text = "Load Library"
+        '
+        'LogsToolStripMenuItem
+        '
+        Me.LogsToolStripMenuItem.Name = "LogsToolStripMenuItem"
+        Me.LogsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LogsToolStripMenuItem.Text = "Logs"
+        '
         'StatusStrip1
         '
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 635)
@@ -61,19 +109,6 @@ Partial Class Form_Main
         Me.StatusStrip1.Size = New System.Drawing.Size(1256, 22)
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'ViewToolStripMenuItem
-        '
-        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogsToolStripMenuItem})
-        Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.ViewToolStripMenuItem.Text = "View"
-        '
-        'LogsToolStripMenuItem
-        '
-        Me.LogsToolStripMenuItem.Name = "LogsToolStripMenuItem"
-        Me.LogsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.LogsToolStripMenuItem.Text = "Logs"
         '
         'Form_Main
         '
@@ -85,7 +120,7 @@ Partial Class Form_Main
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form_Main"
-        Me.Text = "It Goes Boom"
+        Me.Text = "It Goes Boom - Main"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -99,4 +134,9 @@ Partial Class Form_Main
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ViewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LogsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BulletLibraryToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BrassLibraryToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PowderLibraryToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PrimerLibraryToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LoadLibraryToolStripMenuItem As ToolStripMenuItem
 End Class

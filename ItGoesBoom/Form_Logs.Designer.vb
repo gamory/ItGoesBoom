@@ -50,9 +50,13 @@ Partial Class Form_Logs
         '
         'TextBox_Logs
         '
+        Me.TextBox_Logs.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox_Logs.Location = New System.Drawing.Point(12, 12)
         Me.TextBox_Logs.Multiline = True
         Me.TextBox_Logs.Name = "TextBox_Logs"
+        Me.TextBox_Logs.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBox_Logs.Size = New System.Drawing.Size(776, 397)
         Me.TextBox_Logs.TabIndex = 2
         '
@@ -66,7 +70,7 @@ Partial Class Form_Logs
         Me.Controls.Add(Me.Btn_Clear)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_Logs"
-        Me.Text = "Logs"
+        Me.Text = "It Goes Boom - Logs"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

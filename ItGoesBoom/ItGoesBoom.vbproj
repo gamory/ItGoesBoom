@@ -76,6 +76,31 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Equations.vb" />
+    <Compile Include="Form_Brass.Designer.vb">
+      <DependentUpon>Form_Brass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Brass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Bullets.Designer.vb">
+      <DependentUpon>Form_Bullets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Bullets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cartridges.Designer.vb">
+      <DependentUpon>Form_Cartridges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Cartridges.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Loads.Designer.vb">
+      <DependentUpon>Form_Loads.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Loads.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +112,18 @@
       <DependentUpon>Form_Logs.vb</DependentUpon>
     </Compile>
     <Compile Include="Form_Logs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Powders.Designer.vb">
+      <DependentUpon>Form_Powders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Powders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Primers.Designer.vb">
+      <DependentUpon>Form_Primers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Primers.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -104,13 +141,32 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Routines.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form_Brass.resx">
+      <DependentUpon>Form_Brass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Bullets.resx">
+      <DependentUpon>Form_Bullets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Cartridges.resx">
+      <DependentUpon>Form_Cartridges.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Loads.resx">
+      <DependentUpon>Form_Loads.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Logs.resx">
       <DependentUpon>Form_Logs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Powders.resx">
+      <DependentUpon>Form_Powders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Primers.resx">
+      <DependentUpon>Form_Primers.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
